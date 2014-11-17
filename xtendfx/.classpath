@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="java"/>
 	<classpathentry kind="src" path="xtend-gen"/>
 	<classpathentry kind="src" output="target/classes" path="src">
 		<attributes>
