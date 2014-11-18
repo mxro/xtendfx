@@ -39,7 +39,6 @@ import org.eclipse.xtend.lib.macro.TransformationContext;
 import org.eclipse.xtend.lib.macro.TransformationParticipant;
 import org.eclipse.xtend.lib.macro.declaration.AnnotationReference;
 import org.eclipse.xtend.lib.macro.declaration.CompilationStrategy;
-import org.eclipse.xtend.lib.macro.declaration.MutableAnnotationReference;
 import org.eclipse.xtend.lib.macro.declaration.MutableClassDeclaration;
 import org.eclipse.xtend.lib.macro.declaration.MutableFieldDeclaration;
 import org.eclipse.xtend.lib.macro.declaration.MutableMethodDeclaration;
@@ -408,12 +407,12 @@ public class FxBeanCompilationParticipant implements TransformationParticipant<M
   }
   
   public boolean readonly(final MutableFieldDeclaration field, final Type readonlyAnnotation) {
-    MutableAnnotationReference _findAnnotation = field.findAnnotation(readonlyAnnotation);
+    AnnotationReference _findAnnotation = field.findAnnotation(readonlyAnnotation);
     return (_findAnnotation != null);
   }
   
   public boolean lazy(final MutableFieldDeclaration field, final Type noneLazyAnnotation) {
-    MutableAnnotationReference _findAnnotation = field.findAnnotation(noneLazyAnnotation);
+    AnnotationReference _findAnnotation = field.findAnnotation(noneLazyAnnotation);
     return (_findAnnotation == null);
   }
   
@@ -465,7 +464,7 @@ public class FxBeanCompilationParticipant implements TransformationParticipant<M
       }
     }
     if (!_matched) {
-      MutableAnnotationReference _findAnnotation = field.findAnnotation(fxImmutableAnnotation);
+      AnnotationReference _findAnnotation = field.findAnnotation(fxImmutableAnnotation);
       boolean _tripleNotEquals = (_findAnnotation != null);
       if (_tripleNotEquals) {
         return true;
