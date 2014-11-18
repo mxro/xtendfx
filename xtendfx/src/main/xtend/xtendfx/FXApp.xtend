@@ -31,6 +31,7 @@ class FXAppCompilationParticipant extends AbstractClassProcessor {
 				«toJavaCode(applicationType)».launch(args);
 			''']
 		]
+		
 	}
 
 }
