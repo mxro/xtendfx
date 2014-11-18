@@ -1,5 +1,6 @@
 package xtendfx.beans;
 
+import org.eclipse.xtend.lib.macro.Active;
 import xtendfx.beans.FxBeanCompilationParticipant;
 
 /**
@@ -15,6 +16,6 @@ import xtendfx.beans.FxBeanCompilationParticipant;
  *  <li> and an accessor to the JavaFX property.
  * </ul>
  */
-/* @Active(FxBeanCompilationParticipant.class)
- */public @interface FXBindable {
+@Active(FxBeanCompilationParticipant.class)
+public @interface FXBindable {
 }

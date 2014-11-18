@@ -8,12 +8,14 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.util.Duration;
+import org.eclipse.xtext.xbase.lib.ObjectExtensions;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 
 @SuppressWarnings("all")
 public class TimelineExtensions {
-  public static Object Timeline(final /*  */Object init) {
-    throw new Error("Unresolved compilation problems:"
-      + "\n=> cannot be resolved.");
+  public static Timeline Timeline(final Procedure1<? super Timeline> init) {
+    Timeline _timeline = new Timeline();
+    return ObjectExtensions.<Timeline>operator_doubleArrow(_timeline, init);
   }
   
   public static boolean at(final Timeline timeLine, final Duration time, final EventHandler<ActionEvent> action) {

@@ -34,10 +34,6 @@ public class MultiTouchSceneBehavior {
   
   public MultiTouchSceneBehavior(final Scene scene) {
     throw new Error("Unresolved compilation problems:"
-      + "\n+= cannot be resolved."
-      + "\n/ cannot be resolved."
-      + "\n- cannot be resolved."
-      + "\n- cannot be resolved."
       + "\nThe field previousScale is not visible"
       + "\nThe field pivotInpane is not visible"
       + "\nThe field previousScale is not visible");

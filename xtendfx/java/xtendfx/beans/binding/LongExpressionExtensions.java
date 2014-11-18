@@ -4,6 +4,7 @@ import javafx.beans.binding.LongBinding;
 import javafx.beans.binding.LongExpression;
 import javafx.beans.binding.NumberBinding;
 import javafx.beans.value.ObservableNumberValue;
+import org.eclipse.xtext.xbase.lib.Pure;
 import xtendfx.beans.binding.LongConstant;
 
 /**
@@ -14,72 +15,72 @@ import xtendfx.beans.binding.LongConstant;
  */
 @SuppressWarnings("all")
 public class LongExpressionExtensions {
-  /* @Pure
-   */public static NumberBinding operator_plus(final LongExpression a, final ObservableNumberValue b) {
+  @Pure
+  public static NumberBinding operator_plus(final LongExpression a, final ObservableNumberValue b) {
     return a.add(b);
   }
   
-  /* @Pure
-   */public static LongBinding operator_minus(final LongExpression a) {
+  @Pure
+  public static LongBinding operator_minus(final LongExpression a) {
     return a.negate();
   }
   
-  /* @Pure
-   */public static NumberBinding operator_minus(final LongExpression a, final ObservableNumberValue b) {
+  @Pure
+  public static NumberBinding operator_minus(final LongExpression a, final ObservableNumberValue b) {
     return a.subtract(b);
   }
   
-  /* @Pure
-   */public static NumberBinding operator_multiply(final LongExpression a, final ObservableNumberValue b) {
+  @Pure
+  public static NumberBinding operator_multiply(final LongExpression a, final ObservableNumberValue b) {
     return a.multiply(b);
   }
   
-  /* @Pure
-   */public static NumberBinding operator_divide(final LongExpression a, final ObservableNumberValue b) {
+  @Pure
+  public static NumberBinding operator_divide(final LongExpression a, final ObservableNumberValue b) {
     return a.divide(b);
   }
   
-  /* @Pure
-   */public static NumberBinding operator_plus(final long a, final LongExpression b) {
+  @Pure
+  public static NumberBinding operator_plus(final long a, final LongExpression b) {
     LongConstant _longConstant = new LongConstant(a);
     return _longConstant.add(b);
   }
   
-  /* @Pure
-   */public static NumberBinding operator_minus(final long a, final LongExpression b) {
+  @Pure
+  public static NumberBinding operator_minus(final long a, final LongExpression b) {
     LongConstant _longConstant = new LongConstant(a);
     return _longConstant.subtract(b);
   }
   
-  /* @Pure
-   */public static NumberBinding operator_multiply(final long a, final LongExpression b) {
+  @Pure
+  public static NumberBinding operator_multiply(final long a, final LongExpression b) {
     LongConstant _longConstant = new LongConstant(a);
     return _longConstant.multiply(b);
   }
   
-  /* @Pure
-   */public static NumberBinding operator_divide(final long a, final LongExpression b) {
+  @Pure
+  public static NumberBinding operator_divide(final long a, final LongExpression b) {
     LongConstant _longConstant = new LongConstant(a);
     return _longConstant.divide(b);
   }
   
-  /* @Pure
-   */public static LongBinding operator_plus(final LongExpression a, final long b) {
+  @Pure
+  public static LongBinding operator_plus(final LongExpression a, final long b) {
     return a.add(b);
   }
   
-  /* @Pure
-   */public static LongBinding operator_minus(final LongExpression a, final long b) {
+  @Pure
+  public static LongBinding operator_minus(final LongExpression a, final long b) {
     return a.subtract(b);
   }
   
-  /* @Pure
-   */public static LongBinding operator_multiply(final LongExpression a, final long b) {
+  @Pure
+  public static LongBinding operator_multiply(final LongExpression a, final long b) {
     return a.multiply(b);
   }
   
-  /* @Pure
-   */public static LongBinding operator_divide(final LongExpression a, final long b) {
+  @Pure
+  public static LongBinding operator_divide(final LongExpression a, final long b) {
     return a.divide(b);
   }
 }
