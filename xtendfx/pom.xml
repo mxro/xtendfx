@@ -23,8 +23,9 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<xtend.version>2.5.0</xtend.version>
+		<xtend.version>2.7.2</xtend.version>
 	</properties>
+	
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -84,7 +85,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
 <!-- 		<dependency> -->
