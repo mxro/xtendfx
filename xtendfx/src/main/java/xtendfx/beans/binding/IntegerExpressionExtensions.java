@@ -1,11 +1,6 @@
 package xtendfx.beans.binding;
 
-import javafx.beans.binding.IntegerBinding;
-import javafx.beans.binding.IntegerExpression;
-import javafx.beans.binding.NumberBinding;
-import javafx.beans.value.ObservableNumberValue;
 import org.eclipse.xtext.xbase.lib.Pure;
-import xtendfx.beans.binding.IntegerConstant;
 
 /**
  * Extension methods for {@link IntegerExpression}s.
@@ -16,71 +11,80 @@ import xtendfx.beans.binding.IntegerConstant;
 @SuppressWarnings("all")
 public class IntegerExpressionExtensions {
   @Pure
-  public static NumberBinding operator_plus(final IntegerExpression a, final ObservableNumberValue b) {
-    return a.add(b);
+  public static Object operator_plus(final /* IntegerExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nadd cannot be resolved");
   }
   
   @Pure
-  public static IntegerBinding operator_minus(final IntegerExpression a) {
-    return a.negate();
+  public static Object operator_minus(final /* IntegerExpression */Object a) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nnegate cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_minus(final IntegerExpression a, final ObservableNumberValue b) {
-    return a.subtract(b);
+  public static Object operator_minus(final /* IntegerExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsubtract cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_multiply(final IntegerExpression a, final ObservableNumberValue b) {
-    return a.multiply(b);
+  public static Object operator_multiply(final /* IntegerExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nmultiply cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_divide(final IntegerExpression a, final ObservableNumberValue b) {
-    return a.divide(b);
+  public static Object operator_divide(final /* IntegerExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ndivide cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_plus(final int a, final IntegerExpression b) {
-    IntegerConstant _integerConstant = new IntegerConstant(a);
-    return _integerConstant.add(b);
+  public static Object operator_plus(final int a, final /* IntegerExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method add is undefined for the type IntegerExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_minus(final int a, final IntegerExpression b) {
-    IntegerConstant _integerConstant = new IntegerConstant(a);
-    return _integerConstant.subtract(b);
+  public static Object operator_minus(final int a, final /* IntegerExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method subtract is undefined for the type IntegerExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_multiply(final int a, final IntegerExpression b) {
-    IntegerConstant _integerConstant = new IntegerConstant(a);
-    return _integerConstant.multiply(b);
+  public static Object operator_multiply(final int a, final /* IntegerExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method multiply is undefined for the type IntegerExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_divide(final int a, final IntegerExpression b) {
-    IntegerConstant _integerConstant = new IntegerConstant(a);
-    return _integerConstant.divide(b);
+  public static Object operator_divide(final int a, final /* IntegerExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method divide is undefined for the type IntegerExpressionExtensions");
   }
   
   @Pure
-  public static IntegerBinding operator_plus(final IntegerExpression a, final int b) {
-    return a.add(b);
+  public static Object operator_plus(final /* IntegerExpression */Object a, final int b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nadd cannot be resolved");
   }
   
   @Pure
-  public static IntegerBinding operator_minus(final IntegerExpression a, final int b) {
-    return a.subtract(b);
+  public static Object operator_minus(final /* IntegerExpression */Object a, final int b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsubtract cannot be resolved");
   }
   
   @Pure
-  public static IntegerBinding operator_multiply(final IntegerExpression a, final int b) {
-    return a.multiply(b);
+  public static Object operator_multiply(final /* IntegerExpression */Object a, final int b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nmultiply cannot be resolved");
   }
   
   @Pure
-  public static IntegerBinding operator_divide(final IntegerExpression a, final int b) {
-    return a.divide(b);
+  public static Object operator_divide(final /* IntegerExpression */Object a, final int b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ndivide cannot be resolved");
   }
 }

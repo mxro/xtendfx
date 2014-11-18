@@ -1,11 +1,6 @@
 package xtendfx.beans.binding;
 
-import javafx.beans.binding.LongBinding;
-import javafx.beans.binding.LongExpression;
-import javafx.beans.binding.NumberBinding;
-import javafx.beans.value.ObservableNumberValue;
 import org.eclipse.xtext.xbase.lib.Pure;
-import xtendfx.beans.binding.LongConstant;
 
 /**
  * Extension methods for {@link LongExpression}s.
@@ -16,71 +11,80 @@ import xtendfx.beans.binding.LongConstant;
 @SuppressWarnings("all")
 public class LongExpressionExtensions {
   @Pure
-  public static NumberBinding operator_plus(final LongExpression a, final ObservableNumberValue b) {
-    return a.add(b);
+  public static Object operator_plus(final /* LongExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nadd cannot be resolved");
   }
   
   @Pure
-  public static LongBinding operator_minus(final LongExpression a) {
-    return a.negate();
+  public static Object operator_minus(final /* LongExpression */Object a) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nnegate cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_minus(final LongExpression a, final ObservableNumberValue b) {
-    return a.subtract(b);
+  public static Object operator_minus(final /* LongExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsubtract cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_multiply(final LongExpression a, final ObservableNumberValue b) {
-    return a.multiply(b);
+  public static Object operator_multiply(final /* LongExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nmultiply cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_divide(final LongExpression a, final ObservableNumberValue b) {
-    return a.divide(b);
+  public static Object operator_divide(final /* LongExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ndivide cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_plus(final long a, final LongExpression b) {
-    LongConstant _longConstant = new LongConstant(a);
-    return _longConstant.add(b);
+  public static Object operator_plus(final long a, final /* LongExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method add is undefined for the type LongExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_minus(final long a, final LongExpression b) {
-    LongConstant _longConstant = new LongConstant(a);
-    return _longConstant.subtract(b);
+  public static Object operator_minus(final long a, final /* LongExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method subtract is undefined for the type LongExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_multiply(final long a, final LongExpression b) {
-    LongConstant _longConstant = new LongConstant(a);
-    return _longConstant.multiply(b);
+  public static Object operator_multiply(final long a, final /* LongExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method multiply is undefined for the type LongExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_divide(final long a, final LongExpression b) {
-    LongConstant _longConstant = new LongConstant(a);
-    return _longConstant.divide(b);
+  public static Object operator_divide(final long a, final /* LongExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method divide is undefined for the type LongExpressionExtensions");
   }
   
   @Pure
-  public static LongBinding operator_plus(final LongExpression a, final long b) {
-    return a.add(b);
+  public static Object operator_plus(final /* LongExpression */Object a, final long b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nadd cannot be resolved");
   }
   
   @Pure
-  public static LongBinding operator_minus(final LongExpression a, final long b) {
-    return a.subtract(b);
+  public static Object operator_minus(final /* LongExpression */Object a, final long b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsubtract cannot be resolved");
   }
   
   @Pure
-  public static LongBinding operator_multiply(final LongExpression a, final long b) {
-    return a.multiply(b);
+  public static Object operator_multiply(final /* LongExpression */Object a, final long b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nmultiply cannot be resolved");
   }
   
   @Pure
-  public static LongBinding operator_divide(final LongExpression a, final long b) {
-    return a.divide(b);
+  public static Object operator_divide(final /* LongExpression */Object a, final long b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ndivide cannot be resolved");
   }
 }

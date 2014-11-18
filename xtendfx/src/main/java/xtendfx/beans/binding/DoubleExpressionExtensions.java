@@ -1,10 +1,6 @@
 package xtendfx.beans.binding;
 
-import javafx.beans.binding.DoubleBinding;
-import javafx.beans.binding.DoubleExpression;
-import javafx.beans.value.ObservableNumberValue;
 import org.eclipse.xtext.xbase.lib.Pure;
-import xtendfx.beans.binding.DoubleConstant;
 
 /**
  * Extension methods for {@link DoubleExpression}s.
@@ -15,71 +11,80 @@ import xtendfx.beans.binding.DoubleConstant;
 @SuppressWarnings("all")
 public class DoubleExpressionExtensions {
   @Pure
-  public static DoubleBinding operator_plus(final DoubleExpression a, final ObservableNumberValue b) {
-    return a.add(b);
+  public static Object operator_plus(final /* DoubleExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nadd cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_minus(final DoubleExpression a) {
-    return a.negate();
+  public static Object operator_minus(final /* DoubleExpression */Object a) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nnegate cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_minus(final DoubleExpression a, final ObservableNumberValue b) {
-    return a.subtract(b);
+  public static Object operator_minus(final /* DoubleExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsubtract cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_multiply(final DoubleExpression a, final ObservableNumberValue b) {
-    return a.multiply(b);
+  public static Object operator_multiply(final /* DoubleExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nmultiply cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_divide(final DoubleExpression a, final ObservableNumberValue b) {
-    return a.divide(b);
+  public static Object operator_divide(final /* DoubleExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ndivide cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_plus(final double a, final DoubleExpression b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.add(b);
+  public static Object operator_plus(final double a, final /* DoubleExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method add is undefined for the type DoubleExpressionExtensions");
   }
   
   @Pure
-  public static DoubleBinding operator_minus(final double a, final DoubleExpression b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.subtract(b);
+  public static Object operator_minus(final double a, final /* DoubleExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method subtract is undefined for the type DoubleExpressionExtensions");
   }
   
   @Pure
-  public static DoubleBinding operator_multiply(final double a, final DoubleExpression b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.multiply(b);
+  public static Object operator_multiply(final double a, final /* DoubleExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method multiply is undefined for the type DoubleExpressionExtensions");
   }
   
   @Pure
-  public static DoubleBinding operator_divide(final double a, final DoubleExpression b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.divide(b);
+  public static Object operator_divide(final double a, final /* DoubleExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method divide is undefined for the type DoubleExpressionExtensions");
   }
   
   @Pure
-  public static DoubleBinding operator_plus(final DoubleExpression a, final double b) {
-    return a.add(b);
+  public static Object operator_plus(final /* DoubleExpression */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nadd cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_minus(final DoubleExpression a, final double b) {
-    return a.subtract(b);
+  public static Object operator_minus(final /* DoubleExpression */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsubtract cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_multiply(final DoubleExpression a, final double b) {
-    return a.multiply(b);
+  public static Object operator_multiply(final /* DoubleExpression */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nmultiply cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_divide(final DoubleExpression a, final double b) {
-    return a.divide(b);
+  public static Object operator_divide(final /* DoubleExpression */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ndivide cannot be resolved");
   }
 }

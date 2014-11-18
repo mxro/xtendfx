@@ -1,10 +1,9 @@
 package xtendfx.animation;
 
-import javafx.animation.AnimationTimer;
 import xtendfx.animation.LongCallback;
 
 @SuppressWarnings("all")
-public class DelegatingAnimationTimer extends AnimationTimer {
+public class DelegatingAnimationTimer /* implements AnimationTimer  */{
   private LongCallback callback;
   
   public DelegatingAnimationTimer(final LongCallback callback) {

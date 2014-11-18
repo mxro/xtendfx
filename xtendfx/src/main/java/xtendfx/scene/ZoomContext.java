@@ -1,6 +1,5 @@
 package xtendfx.scene;
 
-import javafx.geometry.Point2D;
 import org.eclipse.xtend.lib.Property;
 import org.eclipse.xtext.xbase.lib.Pure;
 
@@ -10,9 +9,9 @@ public class ZoomContext {
   private double _previousScale = 1;
   
   @Property
-  private Point2D _pivotInpane;
+  private /* Point2D */Object _pivotInpane;
   
-  public ZoomContext(final Point2D pivotInpane) {
+  public ZoomContext(final /* Point2D */Object pivotInpane) {
     this.setPivotInpane(pivotInpane);
   }
   

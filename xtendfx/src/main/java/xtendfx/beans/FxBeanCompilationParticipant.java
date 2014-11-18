@@ -2,38 +2,6 @@ package xtendfx.beans;
 
 import com.google.common.base.Objects;
 import java.util.List;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.FloatProperty;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.ListProperty;
-import javafx.beans.property.LongProperty;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.ReadOnlyBooleanProperty;
-import javafx.beans.property.ReadOnlyBooleanWrapper;
-import javafx.beans.property.ReadOnlyDoubleProperty;
-import javafx.beans.property.ReadOnlyDoubleWrapper;
-import javafx.beans.property.ReadOnlyFloatProperty;
-import javafx.beans.property.ReadOnlyFloatWrapper;
-import javafx.beans.property.ReadOnlyIntegerProperty;
-import javafx.beans.property.ReadOnlyIntegerWrapper;
-import javafx.beans.property.ReadOnlyListProperty;
-import javafx.beans.property.ReadOnlyListWrapper;
-import javafx.beans.property.ReadOnlyLongProperty;
-import javafx.beans.property.ReadOnlyLongWrapper;
-import javafx.beans.property.ReadOnlyObjectProperty;
-import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.beans.property.ReadOnlyStringProperty;
-import javafx.beans.property.ReadOnlyStringWrapper;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleFloatProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleListProperty;
-import javafx.beans.property.SimpleLongProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import org.eclipse.xtend.lib.Data;
 import org.eclipse.xtend.lib.macro.TransformationContext;
 import org.eclipse.xtend.lib.macro.TransformationParticipant;
@@ -49,7 +17,6 @@ import org.eclipse.xtend.lib.macro.declaration.Visibility;
 import org.eclipse.xtend.lib.macro.expression.Expression;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.xbase.lib.Extension;
-import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
 import xtendfx.beans.Immutable;
@@ -536,222 +503,74 @@ public class FxBeanCompilationParticipant implements TransformationParticipant<M
   }
   
   public TypeReference toPropertyType_API(final TypeReference ref, final boolean readonly, @Extension final TransformationContext context) {
-    TypeReference _xifexpression = null;
-    if (readonly) {
-      TypeReference _switchResult = null;
-      String _string = ref.toString();
-      boolean _matched = false;
-      if (!_matched) {
-        if (Objects.equal(_string, "boolean")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyBooleanProperty.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "double")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyDoubleProperty.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "float")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyFloatProperty.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "long")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyLongProperty.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "String")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyStringProperty.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "int")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyIntegerProperty.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "javafx.collections.ObservableList")) {
-          _matched=true;
-          List<TypeReference> _actualTypeArguments = ref.getActualTypeArguments();
-          TypeReference _head = IterableExtensions.<TypeReference>head(_actualTypeArguments);
-          _switchResult = context.newTypeReference(ReadOnlyListProperty.class, _head);
-        }
-      }
-      if (!_matched) {
-        _switchResult = context.newTypeReference(ReadOnlyObjectProperty.class, ref);
-      }
-      _xifexpression = _switchResult;
-    } else {
-      TypeReference _switchResult_1 = null;
-      String _string_1 = ref.toString();
-      boolean _matched_1 = false;
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "boolean")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(BooleanProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "double")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(DoubleProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "float")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(FloatProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "long")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(LongProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "String")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(StringProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "int")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(IntegerProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "javafx.collections.ObservableList")) {
-          _matched_1=true;
-          List<TypeReference> _actualTypeArguments_1 = ref.getActualTypeArguments();
-          TypeReference _head_1 = IterableExtensions.<TypeReference>head(_actualTypeArguments_1);
-          _switchResult_1 = context.newTypeReference(ListProperty.class, _head_1);
-        }
-      }
-      if (!_matched_1) {
-        _switchResult_1 = context.newTypeReference(ObjectProperty.class, ref);
-      }
-      _xifexpression = _switchResult_1;
-    }
-    return _xifexpression;
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method or field ReadOnlyBooleanProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyDoubleProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyFloatProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyLongProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyStringProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyIntegerProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyListProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyObjectProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field BooleanProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field DoubleProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field FloatProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field LongProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field StringProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field IntegerProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ListProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ObjectProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved");
   }
   
   public TypeReference toPropertyType(final TypeReference ref, final boolean readonly, @Extension final TransformationContext context) {
-    TypeReference _xifexpression = null;
-    if (readonly) {
-      TypeReference _switchResult = null;
-      String _string = ref.toString();
-      boolean _matched = false;
-      if (!_matched) {
-        if (Objects.equal(_string, "boolean")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyBooleanWrapper.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "double")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyDoubleWrapper.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "float")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyFloatWrapper.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "long")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyLongWrapper.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "String")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyStringWrapper.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "int")) {
-          _matched=true;
-          _switchResult = context.newTypeReference(ReadOnlyIntegerWrapper.class);
-        }
-      }
-      if (!_matched) {
-        if (Objects.equal(_string, "javafx.collections.ObservableList")) {
-          _matched=true;
-          List<TypeReference> _actualTypeArguments = ref.getActualTypeArguments();
-          TypeReference _head = IterableExtensions.<TypeReference>head(_actualTypeArguments);
-          _switchResult = context.newTypeReference(ReadOnlyListWrapper.class, _head);
-        }
-      }
-      if (!_matched) {
-        _switchResult = context.newTypeReference(ReadOnlyObjectWrapper.class, ref);
-      }
-      _xifexpression = _switchResult;
-    } else {
-      TypeReference _switchResult_1 = null;
-      String _string_1 = ref.toString();
-      boolean _matched_1 = false;
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "boolean")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(SimpleBooleanProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "double")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(SimpleDoubleProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "float")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(SimpleFloatProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "long")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(SimpleLongProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "String")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(SimpleStringProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "int")) {
-          _matched_1=true;
-          _switchResult_1 = context.newTypeReference(SimpleIntegerProperty.class);
-        }
-      }
-      if (!_matched_1) {
-        if (Objects.equal(_string_1, "javafx.collections.ObservableList")) {
-          _matched_1=true;
-          List<TypeReference> _actualTypeArguments_1 = ref.getActualTypeArguments();
-          TypeReference _head_1 = IterableExtensions.<TypeReference>head(_actualTypeArguments_1);
-          _switchResult_1 = context.newTypeReference(SimpleListProperty.class, _head_1);
-        }
-      }
-      if (!_matched_1) {
-        _switchResult_1 = context.newTypeReference(SimpleObjectProperty.class, ref);
-      }
-      _xifexpression = _switchResult_1;
-    }
-    return _xifexpression;
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method or field ReadOnlyBooleanWrapper is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyDoubleWrapper is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyFloatWrapper is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyLongWrapper is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyStringWrapper is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyIntegerWrapper is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyListWrapper is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field ReadOnlyObjectWrapper is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field SimpleBooleanProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field SimpleDoubleProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field SimpleFloatProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field SimpleLongProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field SimpleStringProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field SimpleIntegerProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field SimpleListProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nThe method or field SimpleObjectProperty is undefined for the type FxBeanCompilationParticipant"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved"
+      + "\nnewTypeReference cannot be resolved");
   }
 }

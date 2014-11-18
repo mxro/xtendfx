@@ -1,9 +1,7 @@
 package xtendfx.beans.binding;
 
-import javafx.beans.binding.DoubleBinding;
-
 @SuppressWarnings("all")
-public class DoubleConstant extends DoubleBinding {
+public class DoubleConstant /* implements DoubleBinding  */{
   private double value;
   
   public DoubleConstant(final double value) {

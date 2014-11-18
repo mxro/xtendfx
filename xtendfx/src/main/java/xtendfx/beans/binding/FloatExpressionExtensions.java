@@ -1,11 +1,6 @@
 package xtendfx.beans.binding;
 
-import javafx.beans.binding.FloatBinding;
-import javafx.beans.binding.FloatExpression;
-import javafx.beans.binding.NumberBinding;
-import javafx.beans.value.ObservableNumberValue;
 import org.eclipse.xtext.xbase.lib.Pure;
-import xtendfx.beans.binding.FloatConstant;
 
 /**
  * Extension methods for {@link FloatExpression}s.
@@ -16,71 +11,80 @@ import xtendfx.beans.binding.FloatConstant;
 @SuppressWarnings("all")
 public class FloatExpressionExtensions {
   @Pure
-  public static NumberBinding operator_plus(final FloatExpression a, final ObservableNumberValue b) {
-    return a.add(b);
+  public static Object operator_plus(final /* FloatExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nadd cannot be resolved");
   }
   
   @Pure
-  public static FloatBinding operator_minus(final FloatExpression a) {
-    return a.negate();
+  public static Object operator_minus(final /* FloatExpression */Object a) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nnegate cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_minus(final FloatExpression a, final ObservableNumberValue b) {
-    return a.subtract(b);
+  public static Object operator_minus(final /* FloatExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsubtract cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_multiply(final FloatExpression a, final ObservableNumberValue b) {
-    return a.multiply(b);
+  public static Object operator_multiply(final /* FloatExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nmultiply cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_divide(final FloatExpression a, final ObservableNumberValue b) {
-    return a.divide(b);
+  public static Object operator_divide(final /* FloatExpression */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ndivide cannot be resolved");
   }
   
   @Pure
-  public static NumberBinding operator_plus(final float a, final FloatExpression b) {
-    FloatConstant _floatConstant = new FloatConstant(a);
-    return _floatConstant.add(b);
+  public static Object operator_plus(final float a, final /* FloatExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method add is undefined for the type FloatExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_minus(final float a, final FloatExpression b) {
-    FloatConstant _floatConstant = new FloatConstant(a);
-    return _floatConstant.subtract(b);
+  public static Object operator_minus(final float a, final /* FloatExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method subtract is undefined for the type FloatExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_multiply(final float a, final FloatExpression b) {
-    FloatConstant _floatConstant = new FloatConstant(a);
-    return _floatConstant.multiply(b);
+  public static Object operator_multiply(final float a, final /* FloatExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method multiply is undefined for the type FloatExpressionExtensions");
   }
   
   @Pure
-  public static NumberBinding operator_divide(final float a, final FloatExpression b) {
-    FloatConstant _floatConstant = new FloatConstant(a);
-    return _floatConstant.divide(b);
+  public static Object operator_divide(final float a, final /* FloatExpression */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method divide is undefined for the type FloatExpressionExtensions");
   }
   
   @Pure
-  public static FloatBinding operator_plus(final FloatExpression a, final float b) {
-    return a.add(b);
+  public static Object operator_plus(final /* FloatExpression */Object a, final float b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nadd cannot be resolved");
   }
   
   @Pure
-  public static FloatBinding operator_minus(final FloatExpression a, final float b) {
-    return a.subtract(b);
+  public static Object operator_minus(final /* FloatExpression */Object a, final float b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsubtract cannot be resolved");
   }
   
   @Pure
-  public static FloatBinding operator_multiply(final FloatExpression a, final float b) {
-    return a.multiply(b);
+  public static Object operator_multiply(final /* FloatExpression */Object a, final float b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nmultiply cannot be resolved");
   }
   
   @Pure
-  public static FloatBinding operator_divide(final FloatExpression a, final float b) {
-    return a.divide(b);
+  public static Object operator_divide(final /* FloatExpression */Object a, final float b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ndivide cannot be resolved");
   }
 }

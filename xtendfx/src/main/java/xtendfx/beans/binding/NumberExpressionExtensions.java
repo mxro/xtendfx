@@ -1,13 +1,6 @@
 package xtendfx.beans.binding;
 
-import javafx.beans.binding.Bindings;
-import javafx.beans.binding.BooleanBinding;
-import javafx.beans.binding.DoubleBinding;
-import javafx.beans.binding.NumberExpression;
-import javafx.beans.binding.NumberExpressionBase;
-import javafx.beans.value.ObservableNumberValue;
 import org.eclipse.xtext.xbase.lib.Pure;
-import xtendfx.beans.binding.DoubleConstant;
 
 /**
  * Extension methods for {@link NumberExpression}s.
@@ -20,103 +13,117 @@ public class NumberExpressionExtensions {
   private static double EPSILON = 1e-9;
   
   @Pure
-  public static BooleanBinding operator_lessThan(final NumberExpressionBase a, final ObservableNumberValue b) {
-    return a.lessThan(b);
+  public static Object operator_lessThan(final /* NumberExpressionBase */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nlessThan cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_lessEqualsThan(final NumberExpressionBase a, final ObservableNumberValue b) {
-    return a.lessThanOrEqualTo(b);
+  public static Object operator_lessEqualsThan(final /* NumberExpressionBase */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nlessThanOrEqualTo cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_greaterThan(final NumberExpressionBase a, final ObservableNumberValue b) {
-    return a.greaterThan(b);
+  public static Object operator_greaterThan(final /* NumberExpressionBase */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ngreaterThan cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_greaterEqualsThan(final NumberExpressionBase a, final ObservableNumberValue b) {
-    return a.greaterThanOrEqualTo(b);
+  public static Object operator_greaterEqualsThan(final /* NumberExpressionBase */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ngreaterThanOrEqualTo cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_equals(final NumberExpressionBase a, final ObservableNumberValue b) {
-    return a.isEqualTo(b);
+  public static Object operator_equals(final /* NumberExpressionBase */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nisEqualTo cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_notEquals(final NumberExpressionBase a, final ObservableNumberValue b) {
-    return a.isNotEqualTo(b);
+  public static Object operator_notEquals(final /* NumberExpressionBase */Object a, final /* ObservableNumberValue */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nisNotEqualTo cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_lessThan(final double a, final NumberExpressionBase b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.lessThan(b);
+  public static Object operator_lessThan(final double a, final /* NumberExpressionBase */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method lessThan is undefined for the type NumberExpressionExtensions");
   }
   
   @Pure
-  public static BooleanBinding operator_lessEqualsThan(final double a, final NumberExpressionBase b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.lessThanOrEqualTo(b);
+  public static Object operator_lessEqualsThan(final double a, final /* NumberExpressionBase */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method lessThanOrEqualTo is undefined for the type NumberExpressionExtensions");
   }
   
   @Pure
-  public static BooleanBinding operator_greaterThan(final double a, final NumberExpressionBase b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.greaterThan(b);
+  public static Object operator_greaterThan(final double a, final /* NumberExpressionBase */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method greaterThan is undefined for the type NumberExpressionExtensions");
   }
   
   @Pure
-  public static BooleanBinding operator_greaterEqualsThan(final double a, final NumberExpressionBase b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.greaterThanOrEqualTo(b);
+  public static Object operator_greaterEqualsThan(final double a, final /* NumberExpressionBase */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method greaterThanOrEqualTo is undefined for the type NumberExpressionExtensions");
   }
   
   @Pure
-  public static BooleanBinding operator_equals(final double a, final NumberExpressionBase b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.isEqualTo(b);
+  public static Object operator_equals(final double a, final /* NumberExpressionBase */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method isEqualTo is undefined for the type NumberExpressionExtensions");
   }
   
   @Pure
-  public static BooleanBinding operator_notEquals(final double a, final NumberExpressionBase b) {
-    DoubleConstant _doubleConstant = new DoubleConstant(a);
-    return _doubleConstant.isNotEqualTo(b);
+  public static Object operator_notEquals(final double a, final /* NumberExpressionBase */Object b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method isNotEqualTo is undefined for the type NumberExpressionExtensions");
   }
   
   @Pure
-  public static BooleanBinding operator_lessThan(final NumberExpressionBase a, final double b) {
-    return a.lessThan(b);
+  public static Object operator_lessThan(final /* NumberExpressionBase */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nlessThan cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_lessEqualsThan(final NumberExpressionBase a, final double b) {
-    return a.lessThanOrEqualTo(b);
+  public static Object operator_lessEqualsThan(final /* NumberExpressionBase */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nlessThanOrEqualTo cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_greaterThan(final NumberExpressionBase a, final double b) {
-    return a.greaterThan(b);
+  public static Object operator_greaterThan(final /* NumberExpressionBase */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ngreaterThan cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_greaterEqualsThan(final NumberExpressionBase a, final double b) {
-    return a.greaterThanOrEqualTo(b);
+  public static Object operator_greaterEqualsThan(final /* NumberExpressionBase */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\ngreaterThanOrEqualTo cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_equals(final NumberExpressionBase a, final double b) {
-    return a.isEqualTo(b, NumberExpressionExtensions.EPSILON);
+  public static Object operator_equals(final /* NumberExpressionBase */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nisEqualTo cannot be resolved");
   }
   
   @Pure
-  public static BooleanBinding operator_notEquals(final NumberExpressionBase a, final double b) {
-    return a.isNotEqualTo(b, NumberExpressionExtensions.EPSILON);
+  public static Object operator_notEquals(final /* NumberExpressionBase */Object a, final double b) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nisNotEqualTo cannot be resolved");
   }
   
   @Pure
-  public static DoubleBinding operator_multiply(final NumberExpression left, final double right) {
-    return Bindings.multiply(left, right);
+  public static Object operator_multiply(final /* NumberExpression */Object left, final double right) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method or field Bindings is undefined for the type NumberExpressionExtensions"
+      + "\nmultiply cannot be resolved");
   }
 }

@@ -1,9 +1,7 @@
 package xtendfx.beans.binding;
 
-import javafx.beans.binding.LongBinding;
-
 @SuppressWarnings("all")
-public class LongConstant extends LongBinding {
+public class LongConstant /* implements LongBinding  */{
   private long value;
   
   public LongConstant(final long value) {

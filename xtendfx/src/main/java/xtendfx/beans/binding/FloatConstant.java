@@ -1,9 +1,7 @@
 package xtendfx.beans.binding;
 
-import javafx.beans.binding.FloatBinding;
-
 @SuppressWarnings("all")
-public class FloatConstant extends FloatBinding {
+public class FloatConstant /* implements FloatBinding  */{
   private float value;
   
   public FloatConstant(final float value) {
